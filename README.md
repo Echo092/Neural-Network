@@ -1,52 +1,48 @@
 # Neural-Network
-This project involves building a neural network using Python and relevant libraries. The process includes designing the network architecture, training it on a given dataset, and testing its performance. Furthermore, the project explores methods for assessing machine learning models and discusses strategies for deploying them effectively.
+## Short Discription
+A comprehensive project focused on implementing a neural network using Python and relevant libraries. It covers the design, training, and evaluation of the model while providing insights into deployment strategies.
 ## Getting Started
-Follow these instructions to set up the project on your local machine for development and testing. Refer to the deployment section for details on running the project in a production environment
+This guide will help you set up the project on your local machine for development and testing. For production deployment instructions, see the "Deployment" section.
 ## Prerequisites
-To get started, ensure you have the following installed on your system:
-•	Python 3.x
-•	pandas
-•	numpy
-•	matplotlib
-•	scikit-learn 
+##### Before proceeding, ensure you have the following:
+
+###### Anaconda: 
+Install it by following this guide.
+
+https://clouds.eos.ubc.ca/~phil/docs/problem_solving/01-Orientation/01.03-Installing-Anaconda-on-Windows.html
+###### Required Libraries: 
+Install dependencies using the following command:
+###### pip install numpy pandas tensorflow matplotlib scikit-learn 
 ## Installation
 Complete the setup by verifying that all tests pass successfully.
 
 ## Running the Tests
-Learn how to execute automated tests for this project.
+Execute the following commands to test the system functionality.
+### Breakdown of Tests
+#### 1. End-to-End Testing
+These tests validate the complete pipeline, including data preprocessing, model training, and evaluation.
+###### python test_script.py 
+#### 2. Coding Style Checks
+Ensure compliance with Python coding standards using:
+###### flake8 <project_directory>  
 
-### End-to-End Testing
-These tests validate the entire workflow, including:
+## Deployment
+To deploy the trained neural network in a live environment:
 
-1. Data preprocessing.
-Model initialization and training.
-2. Performance evaluation.
-Model initialization and training.
-3. Performance evaluation.
+##### 1. Train and Save the Model
+Run the following command to train the model and save it:
+###### python train.py --save_model 
 
+##### 2. Serve the Model via an API
+Use a web framework like Flask or FastAPI:
 
-##### Run the following command to execute the tests:
+###### python app.py  
 
-python test_script.py  
-Code Style Testing
-Ensure the code adheres to 
-
-
-##### Python standards and conventions using:
-
-flake8 <project_directory>  
-This checks for compliance with PEP 8 and provides suggestions for improvements.
-
-
-### Deployment
-To deploy the model in a live environment:
-
-##### Train and Save the Model:
-python train.py --save_model  
-##### Serve the Model via a Web Framework: 
-Use Flask or FastAPI.
-python app.py  
-##### Access the API: 
-Interact with the model through a browser or tools like Postman.
-### Author
+## Author
 Arun Prakash
+
+## License
+Project is licensed under MIT license.
+
+## Acknowledgement
+DATA1200 course assignment.
